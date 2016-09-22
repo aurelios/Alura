@@ -59,10 +59,7 @@ public class CarrinhoItem {
 	public BigDecimal getPreco(){
 	    return produto.precoPara(tipoPreco);
 	}
-	
-	public BigDecimal getTotal(CarrinhoItem item){
-	    return item.getTotal(getQuantidade(item));
-	}
+
 	public BigDecimal getTotal(int quantidade) {
 	    return this.getPreco().multiply(new BigDecimal(quantidade));
 	}
