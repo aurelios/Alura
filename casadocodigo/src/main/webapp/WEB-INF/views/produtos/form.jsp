@@ -16,7 +16,7 @@
 <body>
 	<%-- Função do spring que retorna o o controller 'PC' = ProdutosController e o método --%>
 	<form:form action="${ s:mvcUrl('PC#gravar').build() }" method="post"
-		commandName="produto">
+		commandName="produto" enctype="multipart/form-data">
 		<div>
 			<label>Título</label>
 			<form:input path="titulo" />
@@ -45,6 +45,10 @@
 					value="${tipoPreco}" />
 			</div>
 		</c:forEach>
+		<div>
+			<label>Sumário</label> 
+			<input name="sumario" type="file" />
+		</div>
 		<button type="submit">Cadastrar</button>
 	</form:form>
 </body>
