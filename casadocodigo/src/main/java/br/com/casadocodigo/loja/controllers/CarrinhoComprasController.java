@@ -15,7 +15,6 @@ import br.com.casadocodigo.loja.models.Produto;
 import br.com.casadocodigo.loja.models.TipoPreco;
 
 @Controller
-@Scope(value=WebApplicationContext.SCOPE_REQUEST)
 @RequestMapping("/carrinho")
 public class CarrinhoComprasController {
 
@@ -32,13 +31,13 @@ public class CarrinhoComprasController {
 	}
 
 	
-	@RequestMapping("/add")
-	public ModelAndView add(Integer produtoId, TipoPreco tipo){
-	    ModelAndView modelAndView = new ModelAndView("redirect:/carrinho");
-	    CarrinhoItem carrinhoItem = criaItem(produtoId, tipo);
-	    carrinho.add(carrinhoItem);
-	    return modelAndView;
-	}
+    @RequestMapping(value="/add",method=RequestMethod.POST)
+    public ModelAndView add(Integer produtoId, TipoPreco tipoPreco) {
+        ModelAndView modelAndView = new ModelAndView("redirect:/produtos");
+        CarrinhoItem carrinhoItem = criaItem(produtoId, tipoPreco);
+        carrinho.add(carrinhoItem);
+        return modelAndView;
+    }
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ModelAndView itens(){
