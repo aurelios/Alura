@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -119,7 +120,7 @@
 							<form
 								action="${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1,item.tipoPreco).build() }"
 								method="post">
-								<input type="image" src="/excluir.png" alt="Excluir"
+								<input type="image" src="${contextPath}resources/imagens/excluir.png" alt="Excluir"
 									title="Excluir" />
 							</form>
 						</td>
@@ -129,7 +130,7 @@
 			<tfoot>
 				<tr>
 					<td colspan="3"><form
-							action="${s:mvcUrl('PC#finalizar()').build()}" method="post">
+							action="${s:mvcUrl('PC#finalizar').build()}" method="post">
 							<input type="submit" class="checkout" name="checkout"
 								value="Finalizar compra" />
 						</form></td>
