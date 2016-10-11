@@ -43,6 +43,9 @@ body {
 					<li><a href="${s:mvcUrl('PC#form').build()}">Cadastro de
 							Produtos</a></li>
 				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><security:authentication property="principal.username"/></a></li>
+				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
