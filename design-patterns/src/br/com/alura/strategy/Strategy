@@ -1,0 +1,10 @@
+O padrão strategy é útil quando temos um conjunto de algoritmos que atingem o mesmo objetivo 
+porém de formas diferentes como no exemplo do cálculo de imposto.
+Com o strategy é possível desacoplar esse conjunto de algoritmos onde muitas vezes são mantidos em um só local
+com diversos ifs e encapsulados em classes específicas  permitindo a execução de diferentes rotinas 
+sem a necessidade de alterar o código das outras implementações.
+
+Apesar deste padrão tornar o código mais limpo e fácil de realizar manutenções, porém caso seja um cenário
+onde não é nítido que várias novas estratégias aparecerão não é interessante a utilização deste padrão
+pois códigos simples são mais fáceis de manter sempre, além do fato que estaria sendo flexibilizado algo sem
+necessidade.
