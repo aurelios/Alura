@@ -1,0 +1,3 @@
+O State facilitaria o trabalho do desenvolvedor, já que ele possibilitaria que as ações de cada estado fiquem centralizadas
+em classes específicas, evitando a possível bagunça de um código procedural cheio de ifs.
+Além disso, criar novos estados para esse contrato também seria fácil.

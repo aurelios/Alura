@@ -1,0 +1,4 @@
+É o padrão de projeto utilizado na criação de objetos complexos, onde cada método define os valores
+dos atributos deste objeto escondendo sua complexidade de criação, desta forma é definida a responsabilidade
+da criação para o Builder e evita-se a criação de diversos construtores com várias combinações de parâmetros
+que acabam poluindo a classe.

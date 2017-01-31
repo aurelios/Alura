@@ -1,0 +1,2 @@
+Observer é o padrão de projeto utilizado para a criação de novos comportamentos em uma rotina já existente
+utilizando uma interface para reduzir o acoplamento e facilitando a evolução do código.

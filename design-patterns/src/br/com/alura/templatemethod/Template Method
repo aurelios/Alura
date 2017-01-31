@@ -1,0 +1,4 @@
+O Template Method possibilita que o desenvolvedor escreva a "estrutura" do algoritmo apenas uma vez, e a reutilize nas
+implementações específicas de cada um dos algoritmos.
+Isso faz com o que o código fique mais simples, possibilita que mudanças na estrutura desses algoritmos sejam facilmente
+modificadas, e que novos algoritmos sejam criados de forma simples.
